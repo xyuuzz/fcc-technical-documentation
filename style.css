@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+main header,
+nav header {
+    font-weight: 700;
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+
+
+/* Navbar */
+
+nav {
+    border-right: 3px solid black;
+    width: 800px;
+}
+
+nav header {
+    padding: 15px;
+}
+
+nav a {
+    padding: 20px;
+    display: block;
+    border-top: 1px solid #333;
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    /* Cara agar navbar diam(tidak bergerak) */
+    height: 100vh;
+    overflow-y: scroll;
+    /*  */
+    padding-bottom: 500px;
+}
+
+code {
+    margin-left: 20px;
+}
+
+code pre {
+    background-color: #ccc;
+    padding: 10px;
+}
+
+
+/* media query */
+
+@media only screen and (max-width: 576px) {
+    body {
+        flex-direction: column;
+    }
+    nav {
+        overflow-y: scroll;
+        height: 350px;
+        border-bottom: 3px solid #333;
+    }
+    main {
+        overflow-y: unset;
+    }
+}
